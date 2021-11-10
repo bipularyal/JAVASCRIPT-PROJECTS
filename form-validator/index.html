@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up Today!</h1>
+        <!-- FORM -->
+        <form id="form" novalidate>
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input required type="text" id="name" name = "name" placeholder="Full Name">
+            </div>
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input required type="tel" id="phone" name = "phone" placeholder="555-555-5555" minlength="3" maxlength="110" pattern="[0-9]{10}">
+            </div>
+            <!-- Placebolder -->
+            <div class="form-group">
+                <label for="email">email address</label>
+                <input required type="email" id="email" name = "email" placeholder="bipularyal01@gmail.com">
+            </div>
+            <!-- Website URl -->
+            <div class="form-group">
+                <label for="website">Website URL</label>
+                <input required type="url" id="website" name = "website" placeholder="bipul.com.np" value="https://">
+            </div>
+            <!-- Passwords -->
+            <div class="form-group">
+                <label for="password1">password</label>
+                <input required type="password" id="password1"  placeholder="Create Password (min. 8 characters)" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="please inclide 1 uppercase and 1 lowercase and 1 number">
+            </div>
+            <!-- Passwords Confirm-->
+            <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input required type="password" id="password2" name = "password" placeholder="Confirm Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+            </div>
+            <button class="submit">Register</button>
+        </form>
+        <!-- Error Success Message -->
+        <div class="message-container">
+            <h3 id="message">
+                Don't hesitate!
+            </h3>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

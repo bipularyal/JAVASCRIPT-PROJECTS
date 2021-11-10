@@ -1,0 +1,53 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	min-height: 100vh;
+	background-color: whitesmoke;
+	font-family: 'Bebas Neue', cursive;
+}
+h1 {
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+//  LOAder at center of page
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0; // so it gets pulled from all direction
+	background-color: rgba($color: #fff, $alpha: 0.8);
+	img {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.image-container {
+	margin: 10px 30%;
+	img {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+// responsove media query
+@media screen and (max-width: 950px) {
+	.image-container {
+		margin: 10px 15%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 25px;
+	}
+	.image-container {
+		margin: 10px;
+	}
+}
